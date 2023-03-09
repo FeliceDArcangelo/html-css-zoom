@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Rubik', sans-serif;
+}
+
 main{
     background-color: black;
 }
@@ -31,6 +35,10 @@ main{
 .top-bar a:link, .top-bar a:visited{
     color: white;
     text-decoration: none;
+}
+
+.top-bar a:hover{
+    text-decoration: underline;
 }
 
 .container{
@@ -76,10 +84,19 @@ main{
     width: 100%;
 }
 
-.end-bar-left div, .end-bar-center div{
+.end-bar-left a, .end-bar-center a{
     text-align: center;
     padding-right: .5em;
     line-height: 1.4;
+}
+
+.end-bar-left a:link, .end-bar-center a:link, .end-bar-left a:visited, .end-bar-center a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.end-bar-left a:hover, .end-bar-center a:hover{
+    color: rgb(249, 220, 183);
 }
 
 .end-bar-center:nth-child(8){
@@ -99,13 +116,24 @@ main{
 }
 
 .end-bar-right{
-   color: rgb(142, 3, 3); 
    padding-inline: 1.5em;
    padding-top: 2em;
    padding-bottom: 2em;
    background-color: rgb(70, 70, 70);
    font-weight: 700;
+}
 
+.end-bar-right a:link, .end-bar-right a:visited{
+    color: rgb(142, 3, 3); 
+    text-decoration: none;
+}
+
+.end-bar-right:hover{
+    background-color: rgb(168, 168, 168);
+    border: 1em solid rgb(101, 100, 100);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-inline: .5em;
 }
 
 .icon{
